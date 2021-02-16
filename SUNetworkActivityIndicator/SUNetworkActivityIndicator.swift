@@ -7,7 +7,7 @@ import Foundation
 import UIKit
 
 /// NetworkActivityIndicator
-public class NetworkActivityIndicator {
+@objcMembers public class NetworkActivityIndicator: NSObject {
   
   /// Singleton: shared instance
   public static let shared = NetworkActivityIndicator()
@@ -50,7 +50,7 @@ public class NetworkActivityIndicator {
   
    - returns: instance
    */
-  private init() {
+  private override init() {
     self.activeCount = 0
   }
   
